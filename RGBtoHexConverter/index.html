@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to Hex Converter(L2-A35-Q2)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: #000000;">
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">RGB to Hex Converter (Final Assignment A35-Q2)</a>
+  </nav>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="regionR font-weight-bold text-center">R</div>
+    <form class="range-field my-4 mx-2 w-50">
+      <input type="range" class="custom-range" min="0" max="255" value="0" step="1" id="sliderR" />
+    </form>
+    <div class="font-weight-bold text-center" id="numberR">0</div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="regionG font-weight-bold text-center">G</div>
+    <form class="range-field my-4 mx-2 w-50">
+      <input type="range" class="custom-range" min="0" max="255" value="0" step="1" id="sliderG" />
+    </form>
+    <div class="font-weight-bold text-center" id="numberG">0</div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="regionB font-weight-bold text-center">B</div>
+    <form class="range-field my-4 mx-2 w-50">
+      <input type="range" class="custom-range" min="0" max="255" value="0" step="1" id="sliderB" />
+    </form>
+    <div class="font-weight-bold text-center" id="numberB">0</div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="bar">
+      <h2 class="text-center" id="rgbStr">#000000</h2>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
